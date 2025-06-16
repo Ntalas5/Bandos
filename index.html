@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nai</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Καλώς ήρθατε στον ιστότοπο "nai"</h1>
+
+  <button id="bananaButton" class="banana-button">
+    <img id="banana" src="banana.jpg" alt="Μπανάνα" />
+  </button>
+
+  <audio id="painSound" src="pain.mp3"></audio>
+
+  <script>
+    const banana = document.getElementById('bananaButton');
+    const painSound = document.getElementById('painSound');
+
+    banana.addEventListener('click', () => {
+      painSound.currentTime = 0;
+      painSound.play();
+    });
+  </script>
+</body>
+</html>
